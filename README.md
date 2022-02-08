@@ -1,9 +1,9 @@
 # MyFood
 -مشروع تطبيق اكلتي لتشجيع المستخدم للطبخ
 
-- Back-End Developer: 
+- Back-End Developer: Abdul Rahman Al-Maioodh and Khaled Al-Sabbar.
 - Front-End Developer:Ahmed Alzaharni.
-- Database Administrator:Abdullah.
+- Database Administrator:Abdullah Bernawi.
 
 
 -اكلتيlogo
