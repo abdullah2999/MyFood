@@ -30,4 +30,12 @@
 ![app_diagramv2](https://user-images.githubusercontent.com/26899187/154029352-77d5d7d5-37d3-49b9-a0a9-5fe0d6e3d772.png)
 
 
+- Business Model
+
+
+![business model](https://user-images.githubusercontent.com/98816647/154053892-637b449e-778c-4591-9704-daa5c833c302.jpeg)
+
+
+
+
 * [استخدام Git](https://github.com/ctiProgramming1/tools/wiki/Git)
