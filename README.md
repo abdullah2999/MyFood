@@ -1,5 +1,5 @@
 # MyFood
-- مشروع تطبيق اكلتي لتشجيع المستخدم للطبخ
+- مشروع تطبيق اكلتي يوفر مجموعة واسعه من الوصفات التي تجعل تجربة الطهي اسهل
 
 - Back-End Developer: Abdul Rahman Al-Maioodh and Khaled Al-Sabbar.
 - Front-End Developer:Ahmed Alzaharni.
