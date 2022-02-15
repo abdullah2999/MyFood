@@ -1,18 +1,18 @@
 # MyFood
--مشروع تطبيق اكلتي لتشجيع المستخدم للطبخ
+- مشروع تطبيق اكلتي لتشجيع المستخدم للطبخ
 
 - Back-End Developer: Abdul Rahman Al-Maioodh and Khaled Al-Sabbar.
 - Front-End Developer:Ahmed Alzaharni.
 - Database Administrator:Abdullah Bernawi.
 
 
--اكلتيlogo
+- اكلتيlogo
 
 ![اكلتي logo](https://user-images.githubusercontent.com/26899187/152952003-15cd4bc9-6c76-4876-b75d-c6ae8b104a13.png)
 
 
 
--شاشات التطبيق
+- شاشات التطبيق
 
 
 ![search page](https://user-images.githubusercontent.com/26899187/154028747-2783ca95-f208-448a-870f-edbdb9923a09.png)
@@ -24,7 +24,10 @@
 
 
 
+- App Diagram 
 
-App Diagram ![app_diagramv2](https://user-images.githubusercontent.com/98816647/152980217-51638792-7e4d-42c5-a37d-de81dd93c2a5.jpeg)
+
+![app_diagramv2](https://user-images.githubusercontent.com/26899187/154029352-77d5d7d5-37d3-49b9-a0a9-5fe0d6e3d772.png)
+
 
 * [استخدام Git](https://github.com/ctiProgramming1/tools/wiki/Git)
