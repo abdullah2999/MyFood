@@ -1,5 +1,5 @@
 # MyFood
-- مشروع تطبيق اكلتي يوفر مجموعة واسعه من الوصفات التي تجعل تجربة الطهي اسهل
+- مشروع تطبيق اكلتي يوفر مجموعة واسعه من الوصفات التي تجعل تجربة الطهي اسهل بمشاركه وتقييم وعرض الوصفات بشكل بسيط وسهل
 
 - Back-End Developer: Abdul Rahman Al-Maioodh and Khaled Al-Sabbar.
 - Front-End Developer:Ahmed Alzaharni.
