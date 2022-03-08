@@ -41,6 +41,7 @@
 
 ![EDR](https://user-images.githubusercontent.com/98816647/157185385-cb1e0f7f-8d80-413b-a43b-047645139356.png)
 
+hello
 
 
 * [استخدام Git](https://github.com/ctiProgramming1/tools/wiki/Git)
