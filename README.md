@@ -39,8 +39,8 @@
 - ERD
 
 
-![0001](https://user-images.githubusercontent.com/99133294/159178016-8411ee4b-1f44-4944-be48-48f05dd9d4a2.jpg)
 
+![0001](https://user-images.githubusercontent.com/99133294/159178057-c5fd699b-5754-40ec-bb3c-97fcec3a99da.jpg)
 
 
 
