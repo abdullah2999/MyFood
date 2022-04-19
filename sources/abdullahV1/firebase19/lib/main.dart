@@ -17,6 +17,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     //check if user is login in already or not
       body: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context,snapshot){

@@ -10,13 +10,14 @@ class firetasty extends StatefulWidget {
 }
 
 class _firetastyState extends State<firetasty> {
-  final textController =TextEditingController();
-
+  final nameController =TextEditingController();
+  final emailController =TextEditingController();
 
 
   @override
   Widget build(BuildContext context) {
     CollectionReference users= FirebaseFirestore.instance.collection('user');
+    
 
     var userid=FirebaseAuth.instance.currentUser;
 
@@ -24,7 +25,7 @@ class _firetastyState extends State<firetasty> {
       //input to firecloud
       appBar: AppBar(
         title: TextField(
-          controller: textController,
+          controller: nameController,
         ),
         centerTitle: true,
         elevation: 0,
@@ -41,39 +42,45 @@ class _firetastyState extends State<firetasty> {
           child:Icon(Icons.logout) ,),
       ),
        //show data from firecloud
-      body:Column(
-        children: [
-          SizedBox(
-            height: 300,
-            //width: 300,
-            child: StreamBuilder(
-              stream: users.orderBy('name').snapshots(),
-              builder:(context,AsyncSnapshot<QuerySnapshot>snapshot){
-                if(!snapshot.hasData){
-                  return Center(child: Text('Wait...'),);
-                }
-                return ListView(
-                  children: snapshot.data!.docs.map((user){
-                    return ListTile(
-                      title: Text(user['name']),
-                     onLongPress: (){
-                        user.reference.delete();
-                      },
-                    );
-                  }).toList(),
-                );
-              }, ),
-          ),
-          Text(userid!.uid)
-        ],
+      body:SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 300,
+              //width: 300,
+              child: StreamBuilder(
+                stream: users.snapshots(),
+                builder:(context,AsyncSnapshot<QuerySnapshot>snapshot){
+                  if(!snapshot.hasData){
+                    return Center(child: Text('Wait...'),);
+                  }
+                  return ListView(
+                    children: snapshot.data!.docs.map((user){
+                      return ListTile(
+                        title: Text(user['username']),
+                        subtitle: Text(user['email']),
+                       onLongPress: (){
+                          user.reference.delete();
+                        },
+                      );
+                    }).toList(),
+                  );
+                }, ),
+            ),
+            Text(userid!.uid),
+            TextField(controller:emailController,),
+          ],
+        ),
       ),
       //add data to firecloud
       floatingActionButton: FloatingActionButton(
       onPressed: (){
-        users.add({
-          'name':textController.text,
+        users.doc(userid.uid).set({
+          'username':nameController.text,
+          'email':emailController.text,
         });
-        textController.clear();
+        nameController.clear();
+        emailController.clear();
       },
       child: Icon(Icons.save),
       ),
