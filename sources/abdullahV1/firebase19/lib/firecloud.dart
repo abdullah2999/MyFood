@@ -14,15 +14,18 @@ class _firecloudState extends State<firecloud> {
   final textcontroll = TextEditingController();
 
 
- getData(){
+ getData() async{
+   CollectionReference shop = FirebaseFirestore.instance.collection('shop');
+   QuerySnapshot querySnapshot = await shop.get();
 
+   List<QueryDocumentSnapshot> listdocs = querySnapshot.docs;
  }
 
 
 
   @override
   Widget build(BuildContext context) {
-    CollectionReference shop = FirebaseFirestore.instance.collection('shop');
+    
 
     return Scaffold(
       appBar: AppBar(
